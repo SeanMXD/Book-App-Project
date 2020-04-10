@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Lorem Ipsum by Sean Combs
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,9 +12,62 @@
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
   </ion-header>
+  <section *ngIf="section===0">
+    <h1>Lorem Ipsum</h1>
+    <h2>by Sean Combs</h2>
+    <img src="http://lorempixel.com/400/200" />
+  </section>
+  <section *ngIf="section===1">
+    <h1>Table of Contents</h1>
+    <ion-list>
+      <ion-item (click)="setSection(2);">
+        <ion-label>Chapter 1</ion-label>
+      </ion-item>
+      <ion-item (click)="setSection(3);">
+        <ion-label>Chapter 2</ion-label>
+      </ion-item>
+      <ion-item (click)="setSection(4);">
+        <ion-label>Chapter 3</ion-label>
+      </ion-item>
+      <ion-item (click)="setSection(5);">
+        <ion-label>Chapter 4</ion-label>
+      </ion-item>
+    </ion-list>
+  </section>
+  <section *ngIf="section===2">
+    <h1 (click)="setSection(1)">Chapter 1</h1>
+    <p>Exercitation eum magni quasi ullam, doloremque numquam hymenaeos assumenda? Aliquid, asperiores quasi, enim primis possimus assumenda mollitia potenti minus quisquam, potenti sem ante orci, mollis maxime illum, laudantium nostrud nec, incidunt excepturi, placeat. Doloremque? Fermentum perferendis pharetra occaecati consequuntur quod, animi curae, libero hymenaeos quasi do perspiciatis blanditiis sem? Mauris error augue curae, accumsan? Culpa pariatur duis! Purus. Nam ea adipisicing, doloremque metus voluptatem erat, congue nulla atque nibh voluptatibus erat aut eveniet fuga, minima? Condimentum provident eum ullamco aliquam? Anim consequat dui aspernatur? Aute, primis, dolorum? Arcu condimentum magni magnam lectus nihil cillum magnam laudantium, fugit distinctio. Eaque proin.</p>
+    <img src="http://lorempixel.com/400/200" />
+    <p>Ea primis facere alias ad placeat assumenda consectetur laoreet, voluptas, et aspernatur unde, et turpis etiam, minim ratione. Error maiores, at rhoncus vehicula irure! Primis facilis fames. Ducimus, elit cum fringilla senectus, elementum? Hymenaeos eius? Impedit, numquam primis aliquam asperiores perspiciatis non luctus quaerat velit quasi condimentum etiam consectetuer dolore leo leo tempora vel, venenatis? Integer. Dictum repudiandae, quae perferendis, pellentesque quisquam dui, conubia tempor libero aspernatur cupiditate amet cursus. Veniam purus ex adipiscing necessitatibus voluptates excepteur facere magna iste, cupiditate sint! Beatae architecto hic similique, potenti class, viverra venenatis malesuada quibusdam aliquid? Quas. Sodales. Nam! Risus tempor congue, odit.</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <p>Asperiores aut semper suscipit voluptate autem habitasse, nemo? Mus nascetur provident ornare quae, hendrerit platea non tincidunt, neque, augue reprehenderit? Leo distinctio quis sunt integer laboriosam euismod tempor? Litora leo faucibus sequi? Quia maxime eleifend possimus diam rutrum laboris, officiis. Porta laborum. Deleniti laoreet! Semper sagittis maiores, dolorum iste volutpat, consequat auctor! Tortor quo. Exercitationem, quam. Repellat rutrum quos amet. Maxime, quod quisquam penatibus accumsan? Cillum laboris commodo, officia torquent. Montes, corporis sint totam sagittis, quam quia odit fugit dolorum cursus occaecati cras lacus, unde incididunt eiusmod, gravida. Euismod curae, placerat laborum, irure consequatur maecenas, nostrud. Sequi orci facilisis sint.</p>
+  </section>
+  <section *ngIf="section===3">
+    <h1 (click)="setSection(1)">Chapter 2</h1>
+    <p>Aliquet nec vero numquam maiores labore pede! Condimentum dignissimos litora molestias laborum luctus aliqua temporibus quia. Optio dolore veritatis eu, metus sint vel eligendi. Montes. Iaculis mus pellentesque sem alias nemo habitant? Nostra, consectetuer suspendisse. Sapien facilis nemo gravida lacinia! Quod sunt orci ornare mattis sociosqu rerum voluptatum, rerum a mollit vero donec mus, ratione porta. Cursus maxime asperiores posuere. Nec curae temporibus cubilia, sapiente lorem? Expedita sagittis! Iusto bibendum euismod facere, optio vitae doloremque dictum laboris! Perspiciatis ante proident, delectus accusantium ipsam augue. Tenetur impedit totam odio nonummy pede ultricies voluptatum fugit a! Vero class. Pretium consequatur, vestibulum, habitasse.</p>
+
+    <p>Sunt hac eligendi egestas minima erat facilisi tenetur irure dapibus. Quibusdam duis. Vivamus dictum, fugiat, wisi class risus magna facilisis lobortis? Incididunt veniam maecenas! Occaecati, felis? Varius natus inventore, ultricies. Expedita tincidunt! Perferendis laudantium, tristique tempus, consequat ligula pellentesque tempor purus optio interdum atque urna tincidunt, per interdum, blanditiis nam architecto dicta, habitant pretium excepturi magnam. Earum! Soluta laboriosam posuere. Lorem congue, quaerat dui, et cumque nemo posuere, mattis eleifend, molestie, vestibulum? Rhoncus erat vitae! Unde ab, velit dapibus commodi suspendisse quasi quaerat arcu. Nec quas eum augue, in non facere praesentium? Habitant optio. Dolores at aute occaecat erat, dignissimos.</p>
+    <img src="http://lorempixel.com/400/200" />
+    <p>Eget, modi tortor? Pulvinar, lorem bibendum laboris. Maiores, eius phasellus, totam justo dolor aspernatur incididunt etiam massa? Accusamus integer laudantium dui iure facilis porro, malesuada accumsan varius assumenda ipsum laboris? Vehicula nostra iusto eu metus, curae, nonummy facilis, cillum commodi. Voluptatum feugiat, quis mollitia massa. Morbi amet earum! Aliqua, exercitationem adipisicing natus aliquet placerat est ipsum! Soluta reprehenderit eius? Modi. Voluptatibus justo ipsa conubia suspendisse dicta dignissimos aspernatur quae convallis? Occaecati veniam! Hic iaculis natoque sunt risus gravida massa ab. Vivamus gravida consequat metus! Eleifend numquam euismod rerum iaculis nec vulputate ullamco malesuada semper corporis, rem? Facilis praesent, primis ducimus.</p>
+  </section>
+  <section *ngIf="section===4">
+    <h1 (click)="setSection(1)">Chapter 3</h1>
+    <p>Culpa beatae turpis? Esse phasellus temporibus fusce vehicula ipsa, maecenas tempus, eros, massa, distinctio eos quidem modi nihil voluptatem incididunt. Labore, fugit iste laboriosam eum maecenas, cursus tempore iaculis a ultrices adipisicing, tristique sit ex nostra dolor pharetra eaque omnis tenetur excepturi blandit proident praesent nunc donec aliquet, impedit, architecto similique eum lorem nullam? Aspernatur, sagittis! Risus incidunt. Perferendis pariatur? Eleifend doloribus, iure veritatis, tempore praesentium aperiam excepteur, lorem, ullamco. Porttitor arcu volutpat similique mollis, expedita voluptate minim! Nullam viverra, eaque elementum nibh minima adipisicing possimus felis primis? Metus! Dui. Nulla laboriosam. Dolore animi deleniti dolorum lacus irure, natus commodi.</p>
+
+    <p>Ipsam felis, hendrerit, quibusdam integer pulvinar! Molestie, molestiae? Mi id rem officiis nesciunt lectus consequat lacinia consectetuer etiam! Montes mattis fugiat dui eum arcu, numquam dolorem ipsam dis. Fringilla risus, eiusmod magnam! Dolorum cum. Natoque, egestas, luctus augue minim! Ullamco! Dolore venenatis consequat libero platea! Sem, consectetur nobis, cupidatat lacinia? Ratione cumque quas sunt ligula dolorum massa senectus cumque cupiditate quisque pharetra quasi per minim voluptas. Ullamco potenti, quae eum rutrum accusamus? Interdum luctus hic accusantium dapibus sapien deleniti expedita! Odio hic, nonummy luctus. Dapibus adipisicing sollicitudin montes, alias penatibus, duis minima autem, ante dignissim! Quo iaculis quia morbi semper.</p>
+
+    <p>Ut aliquam vulputate ea mollit consequat, molestiae integer suscipit quam fusce amet, quisquam, sed aspernatur. Explicabo! Modi mollit? Esse, diamlorem, lacus, laboris, qui sequi, volutpat pretium consequatur doloremque pulvinar convallis, dignissim lorem veniam velit commodi iaculis, dictum aliqua semper ut velit quisque, odit potenti sit, illo, dignissimos volutpat vulputate luctus natoque. Fuga culpa eveniet? Potenti itaque ante excepteur ultrices? Voluptatum, quam cumque sapiente accumsan vel tincidunt iaculis excepturi ultrices iaculis molestiae maecenas? Quia, commodi similique non, debitis, pariatur facilisis nulla! Tenetur nisi illo hic! Neque sagittis cupiditate sequi, quis necessitatibus rerum praesent nulla purus, hymenaeos massa! Cursus risus iaculis tempore.</p>
+  </section>
+  <section *ngIf="section===5">
+    <h1 (click)="setSection(1)">Chapter 4</h1>
+    <p>Mus fermentum laborum dolorum, posuere gravida montes platea magnam cillum? Nisi vulputate quia occaecat. Posuere. Praesent, diam distinctio praesent? Arcu, laoreet facilisi? Mauris! Parturient tempora eius? Quisquam quo, aperiam sollicitudin non quasi interdum, minim vero, consequat. Eius hac. Eius hac? Ultrices cumque, litora luctus error, sapiente iusto quibusdam lobortis vestibulum. Optio posuere, mollitia quo congue accusamus malesuada aptent! Rem habitant? Ipsa! Exercitationem inventore luctus laboris ab perspiciatis odio nihil quia ornare adipisicing! Occaecat cum hic rem sodales. Nisl, enim magnis! Laoreet fuga iaculis deleniti, risus, alias hymenaeos mi, possimus nostrud, eros aliquet vestibulum leo malesuada, consequat viverra torquent, optio nesciunt.</p>
+    <img src="http://lorempixel.com/400/200" />
+    <p>Architecto! Eveniet voluptatibus sapiente, voluptate, dictumst proident molestias, quisquam nemo error est, provident proin. Cumque nulla adipisci auctor, dolorum interdum ornare torquent! Itaque perferendis alias venenatis habitasse, sed, cum ligula, erat dolor, non sociis nihil rutrum magnis delectus euismod quidem nec cras, per vulputate illo? Diam potenti integer? Incidunt cubilia nullam facilis! Impedit aperiam, nobis? Placerat, exercitation ullamcorper voluptatibus dis! Posuere, wisi repellat distinctio. Itaque malesuada vitae ultrices, eos? Nobis, velit dolore laboriosam at ducimus est repellat adipiscing, curae proident unde, magni purus, vel montes leo netus diam ipsa phasellus hac wisi commodo est ab justo. Aliqua? Fusce egestas odio.</p>
+
+    <p>Laudantium vel! Incididunt nostrud eleifend dolor per, fermentum dictumst ornare maxime totam recusandae euismod minim architecto tempora consectetur dignissimos congue ligula habitant dolorum quam iste duis a? Potenti, habitasse nostrum. Facilisi necessitatibus eu tempus habitant corrupti, penatibus consectetur fermentum amet, aut praesent natoque provident nihil, similique facilis sed? Nihil, ultrices. Feugiat occaecati suscipit nesciunt aenean! Eligendi cursus cupidatat, arcu nunc, faucibus malesuada aspernatur, dolore? Quod similique congue, aliquam, similique mi eros odio, praesentium sed nunc? Cursus unde? Maiores tenetur, bibendum, reiciendis adipisci faucibus illo eget augue! Debitis libero architecto occaecat vestibulum esse curabitur natoque libero nonummy, proin eget sociosqu arcu.</p>
+  </section>
+  <nav>
+    <ion-button *ngIf="section > 0" (click)="decrementSection();">Previous</ion-button>
+    <ion-button *ngIf="section < 5" (click)="incrementSection();">Next</ion-button>
+  </nav>
 </ion-content>
